@@ -1,0 +1,18 @@
+<h4> Form-validatoin </h4>
+
+
+
+
+
+<form [formGroup]="frm">
+    <div>
+        <label>Name <input type="text" formControlName="name" name="name"></label>
+        <br>
+        <label>Gender <input type="text" formControlName="gender" name="gender"></label>
+       
+    </div>
+    <div>
+        <button [disabled]="!frm.valid" >CheckValidation</button>
+    </div>
+    
+ </form>
